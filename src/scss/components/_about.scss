@@ -2,8 +2,13 @@
 .about {
   &__bg {
     padding-block: u.rem(240);
-    background: url(../../public/img/about-bg.png) no-repeat;
+    background-image: url(../../public/img/about-bg.png);
+    -webkit-background-image: url(../../public/img/about-bg.png);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom center;
     background-attachment: fixed;
   }
@@ -15,6 +20,8 @@
     color: var(--c-white);
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    text-wrap: balance;
+    line-height: 1.5;
   }
   text-align: center;
   &__button {

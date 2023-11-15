@@ -5,16 +5,17 @@
   top: 0;
   left: 0;
   right: 0;
-  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 1.5rem;
+  background: transparent;
   transition: all 0.8s ease;
   &__logo {
     font-size: var(--f-body);
-    width: u.rem(450);
+    width: 24rem;
+    margin-right: 1em;
   }
 }
 
@@ -23,16 +24,14 @@
   padding-top: 0;
   background: var(--c-silver);
   @media (width < u.em(1110)) {
-    // background: hsl(var(--clr-white), 0.8);
   }
   .header__logo {
     position: relative;
     top: 2em;
-    // transition: transform 0.2s linear;
+    align-items: flex-end;
     transform: scale(0.7);
   }
   .logo__text {
-    // display: none;
     transition: transform 0.5s 0.2s ease;
     transform: translateY(130%);
   }
@@ -47,7 +46,7 @@
 }
 
 .nav {
-  padding-top: 1em;
+  padding-top: 0.5em;
   &__list {
     display: flex;
     align-items: center;
@@ -58,7 +57,6 @@
     }
   }
   &__link {
-    // outline: 1px solid green;
     padding: 0em 2em;
     color: var(--c-primary);
     border-left: 2px solid var(--c-primary);

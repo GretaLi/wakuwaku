@@ -13,9 +13,7 @@
   }
   &__wrapper {
     position: relative;
-    // display: flex;
     flex-direction: column;
-    // max-width: 80%;
     margin-inline: auto;
     gap: u.rem(72);
     margin-block-end: u.rem(72);
@@ -39,7 +37,6 @@
       color: var(--c-primary);
     }
     &-text {
-      // flex-grow: 1;
       height: 14ch;
       letter-spacing: u.rem(2);
       margin-block-end: u.rem(24);
@@ -69,15 +66,14 @@
       display: flex;
       align-items: baseline;
       &-title {
-        width: 10ch;
+        flex-shrink: 0;
+        width: 30%;
         font-size: var(--f-s);
         color: var(--c-primary);
       }
       &-text {
         font-size: var(--f-xs);
         letter-spacing: u.rem(2);
-        text-indent: -0.5em;
-        padding-left: 0.5em;
       }
       &-time {
         p {
@@ -133,11 +129,12 @@
     &__info {
       display: grid;
       grid-template:
-        "name time"
+        "name ."
         "add time"
         "tel time";
-
+      grid-template-columns: 1fr 1fr;
       &-item {
+        gap: 2em;
         &:nth-child(1) {
           grid-area: name;
         }
@@ -149,6 +146,9 @@
         }
         &:nth-child(4) {
           grid-area: time;
+        }
+        &-title {
+          width: unset;
         }
       }
     }

@@ -3,8 +3,13 @@
 .hero {
   width: 100%;
   min-height: 83.33vh;
-  background: url(../../public/img/hero-bg.png) no-repeat;
+  background-image: url(../../public/img/hero-bg.png);
+  -webkit-background-image: url(../../public/img/hero-bg.png);
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: bottom 15vh center;
   background-attachment: fixed;
 }

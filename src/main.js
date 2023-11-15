@@ -62,12 +62,12 @@ owlBranchItems.forEach((item, index) => {
 });
 
 function displayBranchInfo(index) {
-  const nameEl = document.querySelector("#info-name");
+  // const nameEl = document.querySelector("#info-name");
   const addEl = document.querySelector("#info-add");
   const telEl = document.querySelector("#info-tel");
   const timeEl = document.querySelector("#info-time");
   const mapEl = document.querySelector("#info-map");
-  nameEl.textContent = branchData[index]["name"];
+  // nameEl.textContent = branchData[index]["name"];
   addEl.textContent = branchData[index]["add"];
   telEl.textContent = branchData[index]["tel"];
   timeEl.innerHTML = getTimeHTML(index);

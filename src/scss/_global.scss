@@ -126,15 +126,17 @@ li {
 .logo {
   display: inline-flex;
   align-items: center;
-  height: 8em;
+  justify-content: center;
+  // height: 8em;
   overflow: hidden;
   color: #332e2e;
+  padding-inline: 1em;
   svg {
     display: none;
     fill: white;
   }
   &__face {
-    width: 10em;
+    width: 8em;
   }
   &__heading {
   }
