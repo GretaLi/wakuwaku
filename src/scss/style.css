@@ -200,7 +200,7 @@ li {
 .hero {
   width: 100%;
   min-height: 83.33vh;
-  background: url(../../../public/img/hero-bg.png) no-repeat;
+  background: url(../../public/img/hero-bg.png) no-repeat;
   background-size: cover;
   background-position: bottom 15vh center;
   background-attachment: fixed;
@@ -225,7 +225,7 @@ li {
 }
 .about__bg {
   padding-block: 15rem;
-  background: url(../../../public/img/about-bg.png) no-repeat;
+  background: url(../../public/img/about-bg.png) no-repeat;
   background-size: cover;
   background-position: bottom center;
   background-attachment: fixed;
