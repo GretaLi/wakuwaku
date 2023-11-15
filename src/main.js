@@ -96,6 +96,15 @@ owlTestimonial.owlCarousel({
 
   smartSpeed: 400,
   autoplaySpeed: 2000,
+
+  responsive: {
+    0: {
+      nav: true,
+    },
+    600: {
+      nav: false,
+    },
+  },
 });
 
 AOS.init();

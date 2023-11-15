@@ -9,14 +9,10 @@
     margin-block-end: u.rem(72);
   }
   &__item {
-    max-width: 80%;
     margin-inline: auto;
     &-img {
-      // border-radius: u.rem(6);
       overflow: hidden;
       margin-block-end: u.rem(36);
-      img {
-      }
     }
     &-title {
       margin-block-end: u.rem(12);
