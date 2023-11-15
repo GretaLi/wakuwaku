@@ -1,8 +1,8 @@
 @use "../util" as u;
 
 .hero {
+  height: 83.33dvh;
   width: 100%;
-  min-height: 83.33vh;
   background-image: url(../../public/img/hero-bg.png);
   -webkit-background-image: url(../../public/img/hero-bg.png);
   -o-background-size: cover;
@@ -10,8 +10,8 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom 15vh center;
-  background-attachment: fixed;
+  background-position: bottom center;
+  animation: moveBackground 10s ease forwards;
 }
 
 .intro {

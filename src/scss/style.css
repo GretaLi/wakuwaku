@@ -36,7 +36,7 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: var(--c-white);
   font-family: var(--ff-sans);
   font-size: var(--f-body);
@@ -134,8 +134,14 @@ li {
   font-family: "Mansalva", sans-serif;
   font-size: 0.9375rem;
   text-align: center;
+  font-weight: 700;
 }
 
+@keyframes moveBackground {
+  to {
+    background-position: bottom 10% center;
+  }
+}
 .header {
   position: fixed;
   z-index: 200;
@@ -154,9 +160,6 @@ li {
   font-size: var(--f-body);
   width: 24rem;
   margin-right: 1em;
-}
-.header .logo__text {
-  font-weight: 400;
 }
 
 .header-bg {
@@ -204,14 +207,14 @@ li {
 }
 
 .hero {
+  height: 83.33dvh;
   width: 100%;
-  min-height: 83.33vh;
   background-image: url(../../public/img/hero-bg.png);
   -webkit-background-image: url(../../public/img/hero-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom 15vh center;
-  background-attachment: fixed;
+  background-position: bottom center;
+  animation: moveBackground 10s ease forwards;
 }
 
 .intro {
@@ -232,15 +235,24 @@ li {
   text-align: center;
 }
 .about__bg {
+  position: relative;
   padding-block: 15rem;
   background-image: url(../../public/img/about-bg.png);
   -webkit-background-image: url(../../public/img/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-attachment: fixed;
+  background-position: center right;
+  animation: moveBackground 120s ease forwards;
+}
+.about__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(224, 215, 201, 0.09) 0%, rgba(100, 66, 35, 0.2) 100%);
 }
 .about__title {
+  position: relative;
+  z-index: 1;
   margin-block-end: 3rem;
   font-family: var(--ff-serif);
   font-size: var(--f-xl);
@@ -250,6 +262,10 @@ li {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   text-wrap: balance;
   line-height: 1.5;
+}
+.about__button {
+  position: relative;
+  z-index: 1;
 }
 .about__item {
   display: flex;
