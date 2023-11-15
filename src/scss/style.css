@@ -135,6 +135,7 @@ li {
   font-size: 0.9375rem;
   text-align: center;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 @keyframes moveBackground {
