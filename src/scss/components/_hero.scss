@@ -1,0 +1,24 @@
+@use "../util" as u;
+
+.hero {
+  width: 100%;
+  min-height: 83.33vh;
+  background: url(../../../public/img/hero-bg.png) no-repeat;
+  background-size: cover;
+  background-position: bottom 15vh center;
+  background-attachment: fixed;
+}
+
+.intro {
+  padding-block: u.rem(120);
+  background: var(--c-secondary);
+  text-align: center;
+  &__title {
+    margin-block-end: u.rem(24);
+    font-size: var(--f-l);
+    color: var(--c-primary);
+  }
+  &__text {
+    font-size: var(--f-x);
+  }
+}

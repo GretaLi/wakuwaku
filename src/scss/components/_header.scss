@@ -1,0 +1,72 @@
+@use "../util" as u;
+.header {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.8s ease;
+  &__logo {
+    font-size: var(--f-body);
+    width: u.rem(450);
+  }
+}
+
+.header-bg {
+  transform: translateY(-3em);
+  padding-top: 0;
+  background: var(--c-silver);
+  @media (width < u.em(1110)) {
+    // background: hsl(var(--clr-white), 0.8);
+  }
+  .header__logo {
+    position: relative;
+    top: 2em;
+    // transition: transform 0.2s linear;
+    transform: scale(0.7);
+  }
+  .logo__text {
+    // display: none;
+    transition: transform 0.5s 0.2s ease;
+    transform: translateY(130%);
+  }
+  .nav {
+    align-self: stretch;
+    // padding-top: 0;
+
+    &__list {
+      justify-content: center;
+    }
+  }
+}
+
+.nav {
+  padding-top: 1em;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &:first-child .nav__link {
+      border: none;
+    }
+  }
+  &__link {
+    // outline: 1px solid green;
+    padding: 0em 2em;
+    color: var(--c-primary);
+    border-left: 2px solid var(--c-primary);
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../util" as u;
+
+.testimonial {
+  padding-block: u.rem(120);
+  &__wrapper {
+    .owl-item {
+      display: flex;
+      width: u.rem(350) !important;
+      height: u.rem(350) !important;
+    }
+  }
+  &__item {
+    &.mt-auto {
+      margin-top: auto;
+    }
+    &-img {
+    }
+    &-text {
+      padding: 1em 3em 1em 2em;
+      border-left: 2px solid var(--c-primary);
+
+      span {
+        display: block;
+        padding-block-start: 2em;
+        opacity: 0.5;
+      }
+    }
+    &-video {
+      width: u.rem(350) !important;
+      height: u.rem(350) !important;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../util" as u;
+
+.footer {
+  padding-block-start: u.rem(120);
+  background: var(--c-secondary);
+  text-align: center;
+  &__logo {
+    .logo__face {
+      display: none;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: u.rem(12);
+    justify-content: center;
+    padding-block: u.rem(48);
+  }
+
+  &__copyright {
+    font-size: 0.8em;
+    padding-block: 0.5em;
+    margin-top: u.rem(48);
+    background: var(--c-primary);
+    color: var(--c-secondary);
+  }
+}

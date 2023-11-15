@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>わくわく Waku Waku Burger | Pasta | Cafe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/scss/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <a href="index.html">
+        <h1 class="header__logo logo">
+          <img
+            class="logo__face"
+            src="./public/img/waku-face.svg"
+            alt="Waku Logo Icon"
+          />
+
+          <div class="logo__heading">
+            <img
+              class="logo__image"
+              src="./public/img/waku-logo.svg"
+              alt="Waku Logo"
+            />
+            <p class="logo__text">Waku Waku Burger | Pasta | Cafe</p>
+          </div>
+        </h1>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#hero">首頁</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">關於</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#menu">菜單</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="hero"></section>
+      <!-- INTRO SECTION -->
+      <section class="intro">
+        <div class="container">
+          <h2 class="intro__title">♬</h2>
+          <p class="intro__text">
+            わくわく 在日文中 <br />
+            有著對美好事物有期待、興奮心情的含義<br />希望顧客們踏入這個空間<br />就能對接下來發生的一切滿懷期待。
+          </p>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="about__bg">
+          <div class="container">
+            <h2 class="about__title">集結一切對美好事物的興奮</h2>
+            <a class="btn-cta about__button" href="#menu">查看菜單</a>
+          </div>
+        </div>
+        <div class="about__wrapper container">
+          <div class="about__item">
+            <div
+              class="about__item-content"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h3 class="about__item-title">讓美好滋味，在心中綻放</h3>
+              <p class="about__item-description">
+                わくわく
+                座落在熙來攘往的都會，提供每個認真生活、體會生活、與享受生活的人，一個落腳歇息的一隅。在這個素雅且有溫度的空間裡，我們一同品嚐各種經典日式漢堡、嚐一口法式吐司，啜一口清香包種，而在心底不禁發出一聲，「わくわく」！
+              </p>
+            </div>
+            <div class="about__item-img">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                src="./public/img/about-restaurant.jpg"
+                alt="Waku Waku Restaurant"
+              />
+            </div>
+          </div>
+          <div class="about__item">
+            <div
+              class="about__item-content"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <h3 class="about__item-title">讓味蕾跳動，滿滿期待</h3>
+              <p class="about__item-description">
+                わくわく
+                用懇切的態度烹飪，嚴選台灣在地純然食材，以時鮮為字，將青蔬成文，書寫食材最動人心弦的意味。每一口都是一種驚喜，每一種口感都是一種享受。わくわく
+                burger 讓您感受到漢堡的魅力，讓您的生活更加美味。
+              </p>
+            </div>
+            <div class="about__item-img">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="350"
+                src="./public/img/about-food.png"
+                alt="Waku Waku Food"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURE SECTION -->
+      <section class="feature">
+        <div class="container">
+          <div class="feature__wrapper">
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="feature__item-img">
+                <img src="./public/img/waku-curry.jpg" alt="日系風味咖哩" />
+              </div>
+              <h3 class="feature__item-title">日系風味咖哩</h3>
+              <p class="feature__item-text">
+                透過延長熟成時間、引入更多種類的香料以及不同的蔬果底料，搭配粒粒分明、金黃透亮的二林樂田米飯，醬與飯達到加成的效果，waku
+                致力於為每位食客打造獨一無二的最佳咖喱風味。
+              </p>
+            </div>
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="feature__item-img">
+                <img
+                  src="./public/img/waku-burger.jpg"
+                  alt="炸洋蔥富士山牛肉堡"
+                />
+              </div>
+              <h3 class="feature__item-title">炸洋蔥富士山牛肉堡</h3>
+              <p class="feature__item-text">
+                炸洋蔥富士山牛肉堡，將洋蔥一圈一圈仔細放入油鍋慢炸，少了洋蔥的嗆辣，卻保留了蔬菜的甜味，是我們的招牌唷。第一次不知道要吃什麼就點這個吧！<br />溫馨提醒：醬汁甜甜的，是比較日式的風味唷🧅
+              </p>
+            </div>
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="feature__item-img">
+                <img
+                  src="./public/img/waku-brunch.jpg"
+                  alt="酪梨燻鮭魚早午餐"
+                />
+              </div>
+              <h3 class="feature__item-title">酪梨燻鮭魚早午餐</h3>
+              <p class="feature__item-text">
+                酪梨燻鮭魚早午餐/奶油煎明太子雞腿肉早午餐，慵懶的一天用營養豐富的早午餐開啟，是一件幸福的事♪
+              </p>
+            </div>
+          </div>
+          <a class="btn-cta feature__button" href="#menu">查看菜單</a>
+        </div>
+      </section>
+      <!-- BRANCH SECTION -->
+      <section class="branch" id="menu">
+        <div class="container">
+          <!-- <h2 class="branch__title">Waku Waku Menu</h2> -->
+
+          <div class="branch__wrapper owl-carousel">
+            <div
+              class="branch__item active"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="branch__item-img">
+                <img
+                  src="./public/img/branch101.jpg"
+                  alt="Waku Waku Burger 101店"
+                />
+              </div>
+              <h3 class="branch__item-title">♪ Burger 101店</h3>
+              <p class="branch__item-text">
+                位於吳興街內，比鄰吳興市場與信義計畫區，是有趣新與舊的碰撞區，101店也是
+                waku 的創始店，主要販售漢堡/早午餐/甜點。
+              </p>
+              <a
+                class="btn-cta branch__item-button"
+                href="https://drive.google.com/file/d/1KJymTX2yhs_myvNcNBqLbDKgUyxVWdJY/view?usp=drive_link"
+                target="_blank"
+                >101店菜單</a
+              >
+            </div>
+            <div
+              class="branch__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="branch__item-img">
+                <img
+                  src="./public/img/branch-zhongshan.jpg"
+                  alt="Waku Waku Burger 中山店"
+                />
+              </div>
+              <h3 class="branch__item-title">♪ burger 中山店</h3>
+              <p class="branch__item-text">
+                位於誠品南西5+樓的書店夾層，品嚐漢堡的同時可以聞到陣陣書卷香，主要販售日式定食/漢堡/早午餐/法式吐司。
+              </p>
+              <a
+                class="btn-cta branch__item-button"
+                href="https://drive.google.com/file/d/1p09L_iXdZx3pC0KoxRktAFeoODBQNLBH/view?usp=drive_link"
+                target="_blank"
+                >中山店菜單</a
+              >
+            </div>
+            <div
+              class="branch__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="branch__item-img">
+                <img
+                  src="./public/img/branch-cityhall.jpg"
+                  alt="Waku Waku Pasta 市府店"
+                />
+              </div>
+              <h3 class="branch__item-title">♪ Pasta 市府店</h3>
+              <p class="branch__item-text">
+                位於誠品信義 4
+                樓，品嚐義大利麵時可以遠眺整棟台北101大樓，主要販售日風義大利麵/咖喱飯/自己烘焙的甜點。
+              </p>
+              <a
+                class="btn-cta branch__item-button"
+                href="https://drive.google.com/file/d/16FRfsimA-Do5IbwYBg9DHe26Ndrmu3La/view?usp=drive_link"
+                target="_blank"
+                >市府店菜單</a
+              >
+            </div>
+            <div
+              class="branch__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="branch__item-img">
+                <img
+                  src="./public/img/branch-chifeng.jpg"
+                  alt="Waku Waku Pasta 赤峰店"
+                />
+              </div>
+              <h3 class="branch__item-title">♪ Pasta 赤峰店</h3>
+              <p class="branch__item-text">
+                位於赤峰街建成公園對面，品嚐義大利麵時可以享受綠意，主要販售日風義大利麵/日式厚鬆餅/自己烘焙的甜點。
+              </p>
+              <a
+                class="btn-cta branch__item-button"
+                href="https://drive.google.com/file/d/16dHNWCv6cuN5LmXhRJ36DAUWw5ekPSTP/view?usp=drive_link"
+                target="_blank"
+                >赤峰店菜單</a
+              >
+            </div>
+          </div>
+
+          <div class="branch__info">
+            <div class="branch__info-item">
+              <h3
+                class="branch__info-item-title"
+                id="info-name"
+                style="width: unset"
+              >
+                burger 101店
+              </h3>
+            </div>
+            <div class="branch__info-item">
+              <h3 class="branch__info-item-title">地址</h3>
+              <p class="branch__info-item-text" id="info-add">
+                110台北市信義區吳興街117號
+              </p>
+            </div>
+            <div class="branch__info-item">
+              <h3 class="branch__info-item-title">電話</h3>
+              <p class="branch__info-item-text" id="info-tel">02-27586651</p>
+            </div>
+            <div class="branch__info-item">
+              <h3 class="branch__info-item-title">營業時間</h3>
+              <div class="branch__info-item-time" id="info-time">
+                <p class="branch__info-item-text">星期一 11:30–21:30</p>
+                <p class="branch__info-item-text">星期二 11:30–21:30</p>
+                <p class="branch__info-item-text">星期三 11:30–21:30</p>
+                <p class="branch__info-item-text">星期四 11:30–21:30</p>
+                <p class="branch__info-item-text">星期五 11:30–21:30</p>
+                <p class="branch__info-item-text">星期六 11:30–21:30</p>
+                <p class="branch__info-item-text">星期日 11:30–21:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branch__info-map">
+          <!-- 地圖 -->
+          <iframe
+            id="info-map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14460.485217175408!2d121.5613837!3d25.0299571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb922ea8303%3A0xdc9035aca1044338!2swaku%20waku%20burger%20101%E5%BA%97!5e0!3m2!1szh-TW!2stw!4v1699864902322!5m2!1szh-TW!2stw"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- TESTIMONIAL SECTION -->
+      <section class="testimonial">
+        <div class="owl-carousel testimonial__wrapper">
+          <div class="testimonial__item">
+            <img
+              class="testimonial__item-img"
+              src="./public/img/waku-post1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="testimonial__item">
+            <img
+              class="testimonial__item-img"
+              src="./public/img/waku-post2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              我很是喜歡待在わくわく裡用餐的時光，也許正是因為特別自在，不知不覺就待上了好幾些時間。
+              <span>—— 食癮，拾影</span>
+            </p>
+          </div>
+          <div class="testimonial__item">
+            <img
+              class="testimonial__item-img"
+              src="./public/img/waku-post3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              以原木柱子和白布做視覺上的層次點綴，沒有一目了然空曠的視覺感，擁有自成一格的迷人角落；這裡靜靜的，也有著幾分的日本懷舊氛圍。
+              <span>—— 男子日常生活</span>
+            </p>
+          </div>
+          <div class="testimonial__item">
+            <img
+              class="testimonial__item-img"
+              src="./public/img/waku-post4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              わくわく = 集結一切對美好事物的期待<br />
+              親手製作的料理，道道都兼顧了視覺、嗅覺、味覺等體驗，看得滿足、吃得也滿足
+              <span>—— EVERYDAY OBJECT</span>
+            </p>
+          </div>
+          <div class="testimonial__item">
+            <iframe
+              class="testimonial__item-video"
+              loading="lazy"
+              src="https://www.youtube.com/embed/b7mtKwOJC0g?si=RkWdyaleG2zhXrdp&amp;start=650"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              他們的餐都很好吃！！可以推薦給大家，安心的來，安心的點。
+              <span>—— 沈</span>
+            </p>
+          </div>
+
+          <div class="testimonial__item">
+            <iframe
+              class="testimonial__item-video"
+              loading="lazy"
+              src="https://www.youtube.com/embed/fwl9J8SlMoE?si=wPAZTmJo9aYL6yWM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              毫無疑問這是我吃過最好吃的漢堡。
+              <span>—— 肥波</span>
+            </p>
+          </div>
+
+          <div class="testimonial__item">
+            <iframe
+              class="testimonial__item-video"
+              loading="lazy"
+              src="https://www.youtube.com/embed/1_3Srj17izc?si=kvfWa3j9jOTLLIS8&amp;start=80"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="testimonial__item mt-auto">
+            <p class="testimonial__item-text">
+              與其他漢堡的差異是，他會加入一些洋蔥、佐料，更多風味更多層次，好好吃！
+              <span>—— 內內</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo logo" href="index.html">
+        <img
+          class="logo__face"
+          src="./public/img/waku-face.svg"
+          alt="Waku Logo Icon"
+        />
+
+        <div class="logo__heading">
+          <img
+            class="logo__img"
+            src="./public/img/waku-logo.svg"
+            alt="Waku Logo"
+          />
+          <p class="logo__text">Waku Waku Burger | Pasta | Cafe</p>
+        </div>
+      </a>
+
+      <div class="footer__social">
+        <a href="https://www.facebook.com/wakuwakuburger/photos"
+          ><img src="./public/img/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/wakuwaku_taipei/"
+          ><img src="./public/img/instagram.svg" alt="Instagram"
+        /></a>
+      </div>
+
+      <div class="footer__copyright">
+        <p>
+          （此網站僅為練習使用，並無任何商業用途，圖片版權皆為 Waku 所擁有。)
+        </p>
+
+        <p>Copyright © 2023 | Waku Waku Burger。Pasta。Cafe ♬</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
